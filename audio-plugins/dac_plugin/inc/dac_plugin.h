@@ -10,7 +10,11 @@
 
 #define LIB_DAC "/usr/lib/libaudio_dac.so"
 #define I2C_DEVICE_ADDR  0x4C
+#ifdef PLATFORM_MONACO
+#define I2C_DEVICE       15
+#else
 #define I2C_DEVICE       11
+#endif
 
 typedef struct dac_config {
     uint16_t i2c_device; /*/dev/i2c* */
@@ -30,4 +34,3 @@ int32_t (*dac_expander_setup)(bool, int);
 int32_t (*dac_setup)(void);
 
 #endif //_DAC_PLUGIN_H_
-

@@ -55,3 +55,4 @@ AC_CONFIG_FILES([ \
     Makefile
     dac_plugin.pc])
 AC_OUTPUT
+
