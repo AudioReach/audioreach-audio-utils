@@ -5,6 +5,6 @@ includedir=@includedir@
 
 Name: dac_plugin
 Description: dac_plugin library
-Version: @VERSION@
+Version: @LT_VERSION@
 Libs: -L${libdir} -ldac_plugin
 Cflags: -I${includedir}/dac_plugin
