@@ -8,7 +8,7 @@ echo "Running build script..."
 source ${GITHUB_WORKSPACE}/install/environment-setup-armv8-2a-poky-linux
 
 # make sure we are in the right directory
-cd ${GITHUB_WORKSPACE}
+cd ${GITHUB_WORKSPACE}/audio-route
 autoreconf -Wcross --verbose --install --force --exclude=autopoint
 autoconf --force
 
