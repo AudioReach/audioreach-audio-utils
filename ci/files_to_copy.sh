@@ -5,6 +5,5 @@
 
 # Move outside the github workspace to avoid conflicts
 cd ..
-
 # copy the build artifacts to a temporary directory
 cp -R build/usr/* /tmp/rootfs/usr/
