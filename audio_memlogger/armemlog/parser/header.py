@@ -1,5 +1,5 @@
 #    Header parser file for mem logger
-#    Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+#    Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 #    SPDX-License-Identifier: BSD-3-Clause-Clear
 import sys
 from xml.dom import minidom

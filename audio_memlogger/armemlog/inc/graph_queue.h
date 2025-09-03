@@ -5,9 +5,8 @@
 * \brief
 *      Defines memory structures & logging states
 *      for the graph memory queue.
-*
-*  Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
-*  SPDX-License-Identifier: BSD-3-Clause-Clear
+*   Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+*   *  SPDX-License-Identifier: BSD-3-Clause-Clear
 */
 
 #include <stdint.h>
