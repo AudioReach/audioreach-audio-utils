@@ -11,6 +11,7 @@ permissions:
   contents: read
   security-events: write
 
+
 jobs:
   qcom-preflight-checks:
     uses: Audioreach/audioreach-workflows/.github/workflows/qcom-preflight-checks.yml@checker
