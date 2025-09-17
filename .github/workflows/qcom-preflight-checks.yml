@@ -2,9 +2,9 @@ name: Qualcomm Preflight Checks
 
 on:
   pull_request_target:
-    branches: [ main ]
+    branches: [ njjetha-patch-1 ]
   push:
-    branches: [ main ]
+    branches: [ njjetha-patch-1 ]
   workflow_dispatch:
 
 permissions:
