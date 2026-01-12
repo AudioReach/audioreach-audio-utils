@@ -3,7 +3,7 @@ project: https://github.com/AudioReach/audioreach-audio-utils
 branches:
   main:
     modes:
-      non-blocking:
+      blocking:
         headers:
           - audio-route/include/system/*.h
           - audio-route/include/audio_route/*.h
