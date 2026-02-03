@@ -12,11 +12,6 @@ description: |
 on:
   pull_request_target:
     branches: [ debian ]
-    types:
-      - ready_for_review
-      - synchronize
-    paths-ignore:
-      - '.github/**'
 
 permissions:
  contents: read
