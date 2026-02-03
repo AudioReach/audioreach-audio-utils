@@ -2,9 +2,9 @@ name: Qualcomm Preflight Checks
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ debian ]
   push:
-    branches: [ main ]
+    branches: [ debian ]
   workflow_dispatch:
 
 permissions:

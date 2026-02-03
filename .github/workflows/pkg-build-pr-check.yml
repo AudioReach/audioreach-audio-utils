@@ -12,6 +12,7 @@ description: |
 on:
   pull_request_target:
     branches: [ debian ]
+    types: [opened, reopened, synchronize, ready_for_review]
 
 permissions:
  contents: read
