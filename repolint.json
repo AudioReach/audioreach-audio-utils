@@ -1,5 +1,5 @@
 {
-  "extends": "https://raw.githubusercontent.com/quic/.github/main/repolint.json",
+  "extends": "https://raw.githubusercontent.com/todogroup/repolinter/master/rulesets/schema.json",
   "rules": {
     "source-license-headers-exist": {
       "level": "error",
@@ -27,10 +27,6 @@
             ]
           },
           "lineCount": 60,
-          "patterns": [
-            "(Copyright|©).*Qualcomm Innovation Center, Inc|Copyright (\\(c\\)|©) (20(1[2-9]|2[0-2])(-|,|\\s)*)+ The Linux Foundation",
-            "SPDX-License-Identifier|Redistribution and use in source and binary forms, with or without"
-          ],
           "flags": "i"
         }
       }
