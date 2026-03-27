@@ -13,6 +13,8 @@
 #include <dlfcn.h>
 #include <inttypes.h>
 
+
+
 int32_t init(uint32_t *handle)
 {
     int32_t rc = CDC_EOK;
