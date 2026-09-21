@@ -28,8 +28,8 @@ system_include_HEADERS = $(system_sources)
 
 lib_LTLIBRARIES = libaudioroute.la
 libaudioroute_la_SOURCES := $(c_sources) $(system_source)
-libaudioroute_la_CFLAGS := $(AM_CFLAGS)
+libaudioroute_la_CFLAGS := $(AM_CFLAGS) $(EXPAT_CFLAGS)
 libaudioroute_la_CFLAGS += -D__unused=__attribute__\(\(__unused__\)\)
 libaudioroute_la_CFLAGS += -DNDEBUG
-libaudioroute_la_LIBADD := -ltinyalsa
+libaudioroute_la_LIBADD := -ltinyalsa $(EXPAT_LIBS)
 libaudioroute_la_LDFLAGS := -shared -version-number @LT_VERSION_NUMBER@
