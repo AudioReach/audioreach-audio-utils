@@ -30,7 +30,6 @@
 #include <sys/types.h>
 
 #ifndef popcount 
-#include <bits/stdc++.h>
 #define popcount(device) __builtin_popcount(device)
 #endif
 
