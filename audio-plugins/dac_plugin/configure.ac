@@ -35,6 +35,16 @@ AC_SUBST([LT_VERSION_NUMBER], LT_MAJOR:LT_MINOR:LT_PATCH)
 # Checks for header files.
 AC_CHECK_HEADERS([stdint.h stdlib.h string.h])
 
+AC_ARG_ENABLE([qcs8300],
+        [  --enable-qcs8300  Enable monaco functionality],
+        [case "${enableval}" in
+           yes) qcs8300=true ;;
+           no)  qcs8300=false ;;
+        *) AC_MSG_ERROR([bad value ${enableval} for --enable-qcs8300]) ;;
+        esac],[qcs8300=false])
+
+AM_CONDITIONAL([IS_QCS8300], [test x$qcs8300 = xtrue -o x$all = xtrue])
+
 AC_ARG_WITH([glib],
       AC_HELP_STRING([--with-glib],
          [enable glib, Build against glib. Use this when building for HLOS systems which use glib]))
@@ -62,3 +72,4 @@ AC_CONFIG_FILES([ \
     Makefile
     dac_plugin.pc])
 AC_OUTPUT
+
