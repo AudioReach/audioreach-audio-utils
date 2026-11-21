@@ -11,6 +11,9 @@ AM_CFLAGS = -Wall \
 
 AM_CFLAGS += -I $(top_srcdir)/inc/
 
+if IS_QCS8300
+AM_CFLAGS += -DPLATFORM_MONACO
+endif
 
 h_sources = inc/dac_plugin.h
 
@@ -25,4 +28,4 @@ lib_LTLIBRARIES = libdac_plugin.la
 libdac_plugin_la_CC = @CC@
 libdac_plugin_la_SOURCES = $(c_sources)
 libdac_plugin_la_CFLAGS = $(AM_CFLAGS) -DUSE_GLIB -D_LINUX_LOG_ @AUDIOPLUGINHEADERS_CFLAGS@
-libdac_plugin_la_LDFLAGS = $(AUDCAL_LIBS) $(AUDIOALSA_LIBS) @GLIB_LIBS@ -shared -avoid-version
+libdac_plugin_la_LDFLAGS = $(AUDCAL_LIBS) $(AUDIOALSA_LIBS) @GLIB_LIBS@ -shared -version-number @LT_VERSION_NUMBER@

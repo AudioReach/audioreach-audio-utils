@@ -1,4 +1,3 @@
-
 AM_CFLAGS = -Wall \
         -Wundef \
         -Wstrict-prototypes \
@@ -19,4 +18,4 @@ lib_LTLIBRARIES = libmercury_plugin.la
 libmercury_plugin_la_CC = @CC@
 libmercury_plugin_la_SOURCES = $(c_sources)
 libmercury_plugin_la_CFLAGS = $(AM_CFLAGS)  -D_LINUX_LOG_ @AUDIOPLUGINHEADERS_CFLAGS@
-libmercury_plugin_la_LDFLAGS = $(AUDCAL_LIBS) $(AUDIOALSA_LIBS) -shared -avoid-version
+libmercury_plugin_la_LDFLAGS = $(AUDCAL_LIBS) $(AUDIOALSA_LIBS) -shared -version-number @LT_VERSION_NUMBER@

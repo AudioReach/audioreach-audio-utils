@@ -1,0 +1,34 @@
+Source: qcom-audioroute
+Section: misc
+Priority: optional
+Maintainer: Sairamreddy Bojja <quic_sbojja@quicinc.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ libglib2.0-0,
+ libglib2.0-dev,
+ libtinyalsa2,
+ libtinyalsa-dev,
+Standards-Version: 4.6.2
+Homepage: https://git.codelinaro.org/clo/le/platform/vendor/qcom-opensource/audio-utils
+
+Package: qcom-audioroute
+Architecture: arm64
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ libtinyalsa2,
+ libtinyalsa-dev,
+Description: Qualcomm audio-route audio stack
+ Firmware and shared libraries package.
+
+Package: qcom-audioroute-dev
+Section: libdevel
+Architecture: arm64
+Depends:
+ qcom-audioroute (= ${binary:Version}),
+ ${misc:Depends},
+ libtinyalsa-dev,
+ libglib2.0-0,
+Description: Qualcomm audio-route audio stack development headers
+ Headers-only package.

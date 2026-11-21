@@ -5,6 +5,6 @@ includedir=@includedir@
 
 Name: mercury_plugin
 Description: mercury_plugin library
-Version: @VERSION@
+Version: @LT_VERSION@
 Libs: -L${libdir} -lmercury_plugin
 Cflags: -I${includedir}/mercury_plugin
